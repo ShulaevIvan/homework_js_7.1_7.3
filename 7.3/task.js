@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
         for (let i = n; i< tabContent.length; i++){
             tabContent[i].classList.add('tab__content_active')
-            tabContent[i].classList.remove('tab__content_active')
-            console.log(tabContent[i])
+            tabContent[i].classList.remove('tab__content_active', 'tab_active')
+            tabs[i].classList.remove('tab_active')
         };
     };
 
@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
         if (tabContent[n].classList.contains('tab__content')) {
             tabContent[n].classList.remove('tab__content_active')
             tabContent[n].classList.add('tab__content_active')
+            tabs[n].classList.add('tab_active')
         };
     };
 
